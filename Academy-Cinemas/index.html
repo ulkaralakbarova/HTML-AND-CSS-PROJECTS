@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+    >
+
+    <meta
+        name="description"
+        content="Ulkar Academy movie theatre website"
+    >
+
+    <title>Ulkar Academy</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Lobster&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body id="home">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="#home">
+                Ulkar Academy
+            </a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#academyNavbar"
+                aria-controls="academyNavbar"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div
+                class="collapse navbar-collapse"
+                id="academyNavbar"
+            >
+
+                <ul class="navbar-nav">
+
+                    <li class="nav-item dropdown">
+
+                        <a
+                            class="nav-link dropdown-toggle"
+                            href="#now-playing"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                        >
+                            Now Playing
+                        </a>
+
+                        <ul class="dropdown-menu">
+
+                            <li>
+                                <a
+                                    class="dropdown-item"
+                                    href="#ben-hur"
+                                >
+                                    Ben-Hur
+                                </a>
+                            </li>
+
+                            <li>
+                                <a
+                                    class="dropdown-item"
+                                    href="#earth-stood-still"
+                                >
+                                    The Day the Earth Stood Still
+                                </a>
+                            </li>
+
+                            <li>
+                                <a
+                                    class="dropdown-item"
+                                    href="#vertigo"
+                                >
+                                    Vertigo
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="#tickets"
+                        >
+                            Tickets
+                        </a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="#contact"
+                        >
+                            Contact
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+    <!-- END NAVBAR -->
+
+
+    <!-- HOME SECTION -->
+    <header class="cinema-background home-section">
+
+        <div class="academy-title">
+
+            <span>Ulkar</span>
+
+            <small>Academy</small>
+
+        </div>
+
+    </header>
+    <!-- END HOME SECTION -->
+
+
+    <main>
+
+        <!-- NOW PLAYING SECTION -->
+        <section
+            id="now-playing"
+            class="cinema-background content-section"
+        >
+
+            <div class="container">
+
+                <h1 class="section-title">
+                    Now Playing
+                </h1>
+
+
+                <!-- BEN-HUR -->
+                <article
+                    id="ben-hur"
+                    class="row justify-content-center g-4 movie-section"
+                >
+
+                    <div class="col-md-5 col-lg-4">
+
+                        <img
+                            src="images/ben-hur.jpg"
+                            class="movie-poster"
+                            alt="Ben-Hur movie poster"
+                        >
+
+                    </div>
+
+                    <div class="col-md-7 col-lg-5">
+
+                        <div class="movie-information">
+
+                            <h2>Ben-Hur</h2>
+
+                            <p>
+                                After a Jewish prince is betrayed and sent
+                                into slavery by a Roman friend in
+                                first-century Jerusalem, he regains his
+                                freedom and returns for revenge.
+                            </p>
+
+                            <p>
+                                <strong>Director:</strong>
+                                William Wyler
+                            </p>
+
+                            <p>
+                                <strong>Starring:</strong>
+                                Charlton Heston | Jack Hawkins |
+                                Stephen Boyd
+                            </p>
+
+                            <h3>Show Times</h3>
+
+                            <div class="showtimes">
+
+                                <span class="badge rounded-pill">
+                                    10:00 AM
+                                </span>
+
+                                <span class="badge rounded-pill">
+                                    11:30 AM
+                                </span>
+
+                                <span class="badge rounded-pill">
+                                    1:10 PM
+                                </span>
+
+                                <span class="badge rounded-pill">
+                                    3:30 PM
+                                </span>
+
+                                <span class="badge rounded-pill">
+                                    6:00 PM
+                                </span>
+
+                                <span class="badge rounded-pill">
+                                    9:00 PM
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ADDITIONAL MOVIES -->
+                <div class="row justify-content-center g-4 mt-5">
+
+                    <!-- EARTH STOOD STILL -->
+                    <div
+                        class="col-md-5"
+                        id="earth-stood-still"
+                    >
+
+                        <div class="card movie-card h-100">
+
+                            <img
+                                src="images/earth-stood-still.jpg"
+                                class="card-img-top"
+                                alt="The Day the Earth Stood Still movie poster"
+                            >
+
+                            <div class="card-body">
+
+                                <h2 class="card-title">
+                                    The Day the Earth Stood Still
+                                </h2>
+
+                                <p class="card-text">
+                                    An alien visitor arrives on Earth with
+                                    an important warning for humanity.
+                                </p>
+
+                                <div class="showtimes">
+
+                                    <span class="badge rounded-pill">
+                                        12:00 PM
+                                    </span>
+
+                                    <span class="badge rounded-pill">
+                                        3:00 PM
+                                    </span>
+
+                                    <span class="badge rounded-pill">
+                                        7:00 PM
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- VERTIGO -->
+                    <div
+                        class="col-md-5"
+                        id="vertigo"
+                    >
+
+                        <div class="card movie-card h-100">
+
+                            <img
+                                src="images/vertigo.jpg"
+                                class="card-img-top"
+                                alt="Vertigo movie poster"
+                            >
+
+                            <div class="card-body">
+
+                                <h2 class="card-title">
+                                    Vertigo
+                                </h2>
+
+                                <p class="card-text">
+                                    A former police detective becomes
+                                    involved in a mysterious and dangerous
+                                    investigation.
+                                </p>
+
+                                <div class="showtimes">
+
+                                    <span class="badge rounded-pill">
+                                        11:00 AM
+                                    </span>
+
+                                    <span class="badge rounded-pill">
+                                        4:00 PM
+                                    </span>
+
+                                    <span class="badge rounded-pill">
+                                        8:30 PM
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- END NOW PLAYING SECTION -->
+
+
+        <!-- TICKETS SECTION -->
+        <section
+            id="tickets"
+            class="cinema-background content-section"
+        >
+
+            <div class="container">
+
+                <h1 class="section-title">
+                    Tickets
+                </h1>
+
+                <form class="row justify-content-center g-4">
+
+                    <!-- SELECT MOVIE -->
+                    <div class="col-md-4 col-lg-3">
+
+                        <div class="ticket-box">
+
+                            <label
+                                for="movie"
+                                class="form-label"
+                            >
+                                Please Select a Movie
+                            </label>
+
+                            <select
+                                id="movie"
+                                name="movie"
+                                class="form-select"
+                                required
+                            >
+
+                                <option value="" selected disabled>
+                                    Select Movie
+                                </option>
+
+                                <option value="Ben-Hur">
+                                    Ben-Hur
+                                </option>
+
+                                <option value="The Day the Earth Stood Still">
+                                    The Day the Earth Stood Still
+                                </option>
+
+                                <option value="Vertigo">
+                                    Vertigo
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- SELECT TIME -->
+                    <div class="col-md-4 col-lg-3">
+
+                        <div class="ticket-box">
+
+                            <label
+                                for="show-time"
+                                class="form-label"
+                            >
+                                Please Select a Show Time
+                            </label>
+
+                            <select
+                                id="show-time"
+                                name="show-time"
+                                class="form-select"
+                                required
+                            >
+
+                                <option value="" selected disabled>
+                                    Select Time
+                                </option>
+
+                                <option>10:00 AM</option>
+                                <option>11:30 AM</option>
+                                <option>1:10 PM</option>
+                                <option>3:30 PM</option>
+                                <option>6:00 PM</option>
+                                <option>9:00 PM</option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- SELECT TICKET QUANTITY -->
+                    <div class="col-md-4 col-lg-3">
+
+                        <div class="ticket-box">
+
+                            <label
+                                for="quantity"
+                                class="form-label"
+                            >
+                                Please Select Number of Tickets
+                            </label>
+
+                            <input
+                                id="quantity"
+                                name="quantity"
+                                class="form-control quantity-input"
+                                type="number"
+                                min="1"
+                                max="10"
+                                value="1"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- BUY TICKETS BUTTON -->
+                    <div class="col-12 text-center">
+
+                        <button
+                            type="button"
+                            class="btn gold-button"
+                            data-bs-toggle="modal"
+                            data-bs-target="#ticketModal"
+                        >
+                            Buy Tickets
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </section>
+        <!-- END TICKETS SECTION -->
+
+
+        <!-- CONTACT SECTION -->
+        <section
+            id="contact"
+            class="cinema-background content-section"
+        >
+
+            <div class="container">
+
+                <h1 class="section-title">
+                    Contact Us!
+                </h1>
+
+                <form class="row g-3 contact-form">
+
+                    <div class="col-md-6">
+
+                        <label
+                            for="first-name"
+                            class="visually-hidden"
+                        >
+                            First Name
+                        </label>
+
+                        <input
+                            id="first-name"
+                            name="first-name"
+                            class="form-control"
+                            type="text"
+                            placeholder="First name"
+                            required
+                        >
+
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <label
+                            for="last-name"
+                            class="visually-hidden"
+                        >
+                            Last Name
+                        </label>
+
+                        <input
+                            id="last-name"
+                            name="last-name"
+                            class="form-control"
+                            type="text"
+                            placeholder="Last name"
+                            required
+                        >
+
+                    </div>
+
+                    <div class="col-12">
+
+                        <label
+                            for="email"
+                            class="visually-hidden"
+                        >
+                            Email
+                        </label>
+
+                        <input
+                            id="email"
+                            name="email"
+                            class="form-control"
+                            type="email"
+                            placeholder="Email"
+                            required
+                        >
+
+                    </div>
+
+                    <div class="col-12">
+
+                        <label
+                            for="message"
+                            class="visually-hidden"
+                        >
+                            Message
+                        </label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            class="form-control"
+                            rows="4"
+                            placeholder="Type your message here..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+                    <div class="col-12 text-end">
+
+                        <button
+                            type="submit"
+                            class="btn gold-button"
+                        >
+                            Submit
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </section>
+        <!-- END CONTACT SECTION -->
+
+    </main>
+
+
+    <!-- BOOTSTRAP FOOTER -->
+    <footer class="bg-dark text-white text-center py-4">
+
+        <div class="container">
+
+            <p class="mb-1">
+                Ulkar Academy
+            </p>
+
+            <p class="mb-0">
+                &copy; 2026 Ulkar Academy. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+    <!-- END FOOTER -->
+
+
+    <!-- BOOTSTRAP TICKET MODAL -->
+    <div
+        class="modal fade"
+        id="ticketModal"
+        tabindex="-1"
+        aria-labelledby="ticketModalLabel"
+        aria-hidden="true"
+    >
+
+        <div class="modal-dialog modal-dialog-centered">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <h2
+                        class="modal-title fs-5"
+                        id="ticketModalLabel"
+                    >
+                        Ulkar Academy Tickets
+                    </h2>
+
+                    <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                    ></button>
+
+                </div>
+
+                <div class="modal-body">
+                    Thank you! Your ticket choices are ready.
+                </div>
+
+                <div class="modal-footer">
+
+                    <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                    >
+                        Close
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- END MODAL -->
+
+
+    <!-- Bootstrap JavaScript -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    ></script>
+
+</body>
+
+</html>

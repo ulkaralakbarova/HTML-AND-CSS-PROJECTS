@@ -1,0 +1,318 @@
+:root {
+    --gold: #efc72e;
+    --gold-shadow: #73520c;
+    --dark-red: #74130e;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #170208;
+    color: #222;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* NAVBAR */
+
+.custom-navbar {
+    min-height: 80px;
+    padding: 8px 25px;
+    background: linear-gradient(
+        90deg,
+        #72110d,
+        #a11b11,
+        #71100c
+    );
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.custom-navbar .navbar-brand,
+.custom-navbar .nav-link {
+    color: var(--gold) !important;
+    font-family: "Fugaz One", Impact, sans-serif;
+    text-shadow: 2px 2px 0 var(--gold-shadow);
+}
+
+.custom-navbar .navbar-brand {
+    margin-right: 35px;
+    font-size: 32px;
+}
+
+.custom-navbar .nav-link {
+    padding: 18px 22px !important;
+    font-size: 25px;
+}
+
+.custom-navbar .nav-link:hover,
+.custom-navbar .nav-link:focus {
+    color: #ffe86e !important;
+    background-color: rgba(65, 0, 0, 0.25);
+}
+
+
+/* BACKGROUND */
+
+.cinema-background {
+    background:
+        linear-gradient(
+            rgba(15, 0, 5, 0.08),
+            rgba(15, 0, 5, 0.18)
+        ),
+        url("../images/theater-curtains.jpg");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/* HOME SECTION */
+
+.home-section {
+    display: flex;
+    min-height: 100vh;
+    padding-top: 80px;
+    align-items: center;
+    justify-content: center;
+}
+
+.academy-title {
+    color: var(--gold);
+    font-family: "Lobster", cursive;
+    line-height: 0.8;
+    text-align: center;
+    text-shadow: 9px 9px 0 rgba(83, 39, 15, 0.85);
+    transform: rotate(-8deg);
+}
+
+.academy-title span {
+    display: block;
+    font-size: clamp(90px, 15vw, 210px);
+}
+
+.academy-title small {
+    display: block;
+    margin-left: 25%;
+    font-size: clamp(55px, 9vw, 125px);
+}
+
+
+/* GENERAL SECTIONS */
+
+.content-section {
+    min-height: 100vh;
+    padding: 125px 0 80px;
+    scroll-margin-top: 70px;
+}
+
+.section-title {
+    margin-bottom: 65px;
+    color: var(--gold);
+    font-family: "Fugaz One", Impact, sans-serif;
+    font-size: clamp(48px, 6vw, 80px);
+    text-align: center;
+    text-shadow: 5px 5px 0 var(--gold-shadow);
+}
+
+
+/* MOVIES */
+
+.movie-section {
+    margin-bottom: 30px;
+}
+
+.movie-poster {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-height: 680px;
+    object-fit: cover;
+    border: 12px solid #f5efe0;
+    border-radius: 5px;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
+}
+
+.movie-information {
+    height: 100%;
+    padding: 38px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border: 5px solid #666;
+    border-radius: 5px;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
+}
+
+.movie-information h2 {
+    margin-bottom: 25px;
+    font-family: "Fugaz One", Impact, sans-serif;
+    font-size: 42px;
+}
+
+.movie-information p {
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.movie-information h3 {
+    margin-top: 40px;
+    font-family: "Lobster", cursive;
+    font-size: 36px;
+}
+
+.showtimes .badge {
+    margin: 4px 2px;
+    padding: 13px 15px;
+    color: #222;
+    background-color: #b8bdbc;
+    font-size: 14px;
+}
+
+.movie-card {
+    overflow: hidden;
+    border: 5px solid #666;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
+}
+
+.movie-card .card-img-top {
+    height: 420px;
+    object-fit: contain;
+    background-color: #e4d5ad;
+}
+
+.movie-card .card-title {
+    font-family: "Fugaz One", Impact, sans-serif;
+}
+
+
+/* TICKETS */
+
+.ticket-box {
+    display: flex;
+    min-height: 285px;
+    padding: 35px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.96);
+    border: 5px solid #666;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
+}
+
+.ticket-box .form-label {
+    min-height: 80px;
+    font-family: "Fugaz One", Impact, sans-serif;
+    font-size: 22px;
+}
+
+.ticket-box .form-select {
+    max-width: 230px;
+    padding: 14px;
+    border: 3px solid #888;
+    font-weight: bold;
+}
+
+.quantity-input {
+    width: 85px;
+    padding: 13px;
+    border: 3px solid #888;
+    font-weight: bold;
+}
+
+
+/* GOLD BUTTONS */
+
+.gold-button {
+    padding: 16px 36px;
+    color: #211800;
+    background-color: var(--gold);
+    border: none;
+    border-radius: 40px;
+    font-family: "Fugaz One", Impact, sans-serif;
+    font-size: 18px;
+    box-shadow: 0 7px 0 #987313;
+}
+
+.gold-button:hover,
+.gold-button:focus {
+    color: #211800;
+    background-color: #ffe466;
+    transform: translateY(2px);
+    box-shadow: 0 5px 0 #987313;
+}
+
+
+/* CONTACT */
+
+.contact-form {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.contact-form .form-control {
+    padding: 14px;
+    border: 3px solid #777;
+    font-size: 17px;
+}
+
+
+/* FOOTER */
+
+footer {
+    border-top: 2px solid #444;
+}
+
+
+/* MOBILE DESIGN */
+
+@media screen and (max-width: 767px) {
+
+    .custom-navbar {
+        min-height: 70px;
+        padding: 8px 15px;
+    }
+
+    .custom-navbar .navbar-brand {
+        font-size: 24px;
+    }
+
+    .custom-navbar .nav-link {
+        padding: 8px 0 !important;
+        font-size: 19px;
+    }
+
+    .cinema-background {
+        background-attachment: scroll;
+    }
+
+    .home-section {
+        min-height: 80vh;
+    }
+
+    .content-section {
+        min-height: auto;
+        padding: 100px 0 60px;
+    }
+
+    .section-title {
+        margin-bottom: 40px;
+    }
+
+    .movie-information,
+    .ticket-box {
+        padding: 25px;
+    }
+
+    .movie-card .card-img-top {
+        height: 350px;
+    }
+}
