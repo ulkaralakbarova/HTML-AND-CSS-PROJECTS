@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio website of Ulkar Alakbarova, a Product Owner, QA Lead, Business Analyst and software development student.">
+    <title>Ulkar Alakbarova | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <nav class="navbar" aria-label="Main navigation">
+        <a class="brand" href="#home">UA</a>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#github">GitHub</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
+            <h1>Ulkar Alakbarova</h1>
+            <p class="hero-title">Product Owner · QA Lead · Business Analyst · Web Developer</p>
+            <p>I combine business knowledge, quality assurance and technology to build reliable, user-focused solutions.</p>
+            <a class="button" href="#projects">View my projects</a>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+            <span>&lt;/&gt;</span>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="section about-section">
+            <div>
+                <p class="section-label">ABOUT ME</p>
+                <h2>Experience meets curiosity</h2>
+                <p>I am a technology professional with experience in product ownership, quality assurance, business analysis and banking systems. I enjoy turning complex requirements into clear plans and dependable digital products.</p>
+                <p>I am expanding my technical skills through software-development studies, including HTML, CSS, Bootstrap, Git and GitHub. My goal is to connect strong business analysis with practical development knowledge.</p>
+            </div>
+            <div class="skills-card">
+                <h3>Core skills</h3>
+                <ul>
+                    <li>Agile product ownership</li>
+                    <li>Quality assurance and testing</li>
+                    <li>Business and requirements analysis</li>
+                    <li>HTML, CSS and Bootstrap</li>
+                    <li>Git and GitHub</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects" class="section projects-section">
+            <p class="section-label">SELECTED WORK</p>
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <article class="project-card">
+                    <img src="images/ulkar-academy.png" alt="Ulkar Academy movie theatre website displayed in a browser">
+                    <div class="project-copy">
+                        <h3>Ulkar Academy</h3>
+                        <p>A responsive movie-theatre website created with HTML, CSS and Bootstrap. It includes navigation, movie content and a Bootstrap footer.</p>
+                        <span>HTML · CSS · Bootstrap</span>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <img src="images/html-css-work.png" alt="HTML and CSS project open in Visual Studio Code">
+                    <div class="project-copy">
+                        <h3>HTML and CSS Projects</h3>
+                        <p>A collection of course exercises demonstrating semantic HTML, custom CSS, responsive layouts, forms and Git version control.</p>
+                        <span>HTML · CSS · Git</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="github" class="section github-section">
+            <div>
+                <p class="section-label">MY CODE</p>
+                <h2>Visit my GitHub</h2>
+                <p>Explore the repositories and projects I created while developing my web-development skills.</p>
+            </div>
+            <a class="button button-light" href="https://github.com/ulkaralakbarova" target="_blank" rel="noopener noreferrer">Open GitHub profile</a>
+        </section>
+
+        <section id="contact" class="section contact-section">
+            <p class="section-label">CONTACT</p>
+            <h2>Let’s connect</h2>
+            <p>If you would like to discuss technology, quality assurance or product opportunities, send me a message.</p>
+            <form action="mailto:" method="post" enctype="text/plain">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" placeholder="Your name" required>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="Your email" required>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+                <button class="button" type="submit">Send message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Ulkar Alakbarova · Built with HTML and CSS</p>
+        <a href="#home">Back to top ↑</a>
+    </footer>
+</body>
+</html>
